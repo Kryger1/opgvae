@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    background-color: #f0eae0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blinkendeOverskrift {
+    animation: blink 1.5s linear infinite;
+    color: #fa8072;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.humorDiv img {
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+}
+
+.humorDiv img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.humorDiv p {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Tilføj en svævningseffekt til hele humorDiv for at skabe et "lys" indtryk */
+.humorDiv:hover {
+    background-color: rgba(255,255,240,0.8);
+    transition: background-color 0.5s ease;
+}
